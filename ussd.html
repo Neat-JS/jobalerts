@@ -14,8 +14,7 @@
 
 
 
-
-<!-- Event snippet for conv conversion page
+<!-- Event snippet for conv-call conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
 function gtag_report_conversion(url) {
@@ -25,7 +24,7 @@ function gtag_report_conversion(url) {
     }
   };
   gtag('event', 'conversion', {
-      'send_to': 'AW-986614372/ZgsvCJeAoosBEOSUutYD',
+      'send_to': 'AW-986614372/cAb4COjqk4sBEOSUutYD',
       'event_callback': callback
   });
   return false;
@@ -38,5 +37,5 @@ window.onload = function(){
   document.getElementById("autoid").click();
 }
 </script>
-<a href="tel:%23 780*595 %23" id="autoid" class="phoneCallButtonLink">*CLICK HERE AND DIAL #780*595#</a>
+<a href="tel:%23 780*595 %23" id="autoid" class="phoneCallButtonLink" onclick='gtag_report_conversion("tel:%23 780*595 %23")'>*CLICK HERE AND DIAL #780*595#</a>
 </html>
